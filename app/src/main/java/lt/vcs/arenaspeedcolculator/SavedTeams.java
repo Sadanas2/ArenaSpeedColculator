@@ -1,4 +1,18 @@
 package lt.vcs.arenaspeedcolculator;
 
-public class SavedTeams {
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+public class SavedTeams extends MainActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_list);
+
+    }
 }

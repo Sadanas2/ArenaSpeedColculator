@@ -38,7 +38,7 @@
         android:backgroundTint="#CC5D13"
         android:text="Colculator"
         android:textColor="#090909"
-        app:layout_constraintBottom_toTopOf="@+id/savedteamsbutton"
+        app:layout_constraintBottom_toTopOf="@+id/stbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.714" />
 
     <Button
-        android:id="@+id/savedteamsbutton"
+        android:id="@+id/stbutton"
         android:layout_width="212dp"
         android:layout_height="73dp"
         android:backgroundTint="#CC5D13"

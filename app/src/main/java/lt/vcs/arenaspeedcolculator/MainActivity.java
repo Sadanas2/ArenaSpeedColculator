@@ -1,12 +1,9 @@
 package lt.vcs.arenaspeedcolculator;
 
-import static android.content.ContentValues.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -21,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 //    3)Vartotojas galės išsaugoti savo team su reikiamais speed'ais.
 
     private Button colculatorbutton;
+    private Button stbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +26,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         colculatorbutton = findViewById(R.id.colculatorbutton);
+        stbutton= findViewById(R.id.stbutton);
 
+        
         setUpColculatorButton();
+        setUpSTButton();
     }
 
     private void setUpColculatorButton() {
@@ -38,9 +39,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NextActivity.class);
                 startActivity(intent);
+
             }
         });
     }
+//    stbutton
 
+    private void setUpSTButton() {
+        stbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, SavedTeams.class);
+                startActivity(intent2);
 
+            }
+        });
+    }
 }
