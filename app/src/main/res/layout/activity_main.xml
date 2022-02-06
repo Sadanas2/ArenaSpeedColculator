@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/maincolculatorbutton"
+        android:id="@+id/colculatorbutton"
         android:layout_width="212dp"
         android:layout_height="73dp"
         android:backgroundTint="#CC5D13"
