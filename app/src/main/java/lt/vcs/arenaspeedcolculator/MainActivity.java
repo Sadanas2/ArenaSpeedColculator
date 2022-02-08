@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         stbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, SavedTeams.class);
+                Intent intent2 = new Intent(MainActivity.this, ChampionsWindow.class);
                 startActivity(intent2);
 
             }

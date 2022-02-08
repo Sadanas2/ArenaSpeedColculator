@@ -2,13 +2,17 @@ package lt.vcs.arenaspeedcolculator;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.List;
 
 
-public class SavedTeams extends MainActivity {
+public class ChampionsWindow extends MainActivity {
 
     ListView champsListView;
     private ArrayAdapter<Champ> arrayAdapter;

@@ -14,7 +14,7 @@
             android:name=".NextActivity"
             android:exported="false" />
         <activity
-            android:name=".SavedTeams"
+            android:name=".ChampionsWindow"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
