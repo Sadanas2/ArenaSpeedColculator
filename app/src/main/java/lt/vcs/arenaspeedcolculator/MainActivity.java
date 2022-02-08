@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         stbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, ChampionsWindow.class);
+                Intent intent2 = new Intent(MainActivity.this, SavedTeams.class);
                 startActivity(intent2);
 
             }
