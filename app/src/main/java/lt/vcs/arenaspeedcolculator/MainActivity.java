@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-//    stbutton
 
     private void setUpSTButton() {
         stbutton.setOnClickListener(new View.OnClickListener() {
