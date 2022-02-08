@@ -10,14 +10,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SavedTeams extends MainActivity {
 
-    private TextView chamsList;
+    ListView champsListView;
+    private ArrayAdapter<Champ> arrayAdapter;
+    private List<Champ> champslist;
+    private UseCaseRepository useCaseRepository;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        chamsList= findViewById(R.id.chamsList);
-//        noteContentEditText
+        useCaseRepository = new UseCaseRepository(getApplicationContext());
+
+        champsListView= findViewById(R.id.champsListView);
+
+        useCaseRepository.insertChamps();
+        champslist = useCaseRepository.getAll();
+
+        setUpListView(champsListView);
     }
+
+    private void setUpListView(ListView champsListView) {
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.activity_list_champ, champslist);
+        champsListView.setAdapter(arrayAdapter);
+    }
+
 }
