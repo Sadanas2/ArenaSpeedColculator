@@ -1,4 +1,4 @@
-package lt.vcs.arenaspeedcolculator;
+package lt.vcs.arenaspeedcolculator.champsrepository;
 
 import android.content.Context;
 
@@ -6,6 +6,10 @@ import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import lt.vcs.arenaspeedcolculator.champsrepository.Champ;
+import lt.vcs.arenaspeedcolculator.champsrepository.ChampDao;
+import lt.vcs.arenaspeedcolculator.champsrepository.ChampsDataBase;
 
 public class UseCaseRepository {
 

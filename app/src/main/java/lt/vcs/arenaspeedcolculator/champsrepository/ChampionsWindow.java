@@ -1,15 +1,13 @@
-package lt.vcs.arenaspeedcolculator;
+package lt.vcs.arenaspeedcolculator.champsrepository;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
+
+import lt.vcs.arenaspeedcolculator.MainActivity;
+import lt.vcs.arenaspeedcolculator.R;
 
 
 public class ChampionsWindow extends MainActivity {

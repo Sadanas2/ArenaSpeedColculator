@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import lt.vcs.arenaspeedcolculator.champsrepository.ChampionsWindow;
 
 public class NextActivity extends MainActivity {
     private Button mainchampbutton;

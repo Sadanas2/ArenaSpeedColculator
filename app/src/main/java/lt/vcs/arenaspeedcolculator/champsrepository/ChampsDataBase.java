@@ -1,12 +1,10 @@
-package lt.vcs.arenaspeedcolculator;
+package lt.vcs.arenaspeedcolculator.champsrepository;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-
-import lt.vcs.arenaspeedcolculator.Champ;
 
 @Database(
         entities = {Champ.class},

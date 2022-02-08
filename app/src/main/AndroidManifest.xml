@@ -17,7 +17,7 @@
             android:name=".SavedTeams"
             android:exported="false" />
         <activity
-            android:name=".ChampionsWindow"
+            android:name=".champsrepository.ChampionsWindow"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

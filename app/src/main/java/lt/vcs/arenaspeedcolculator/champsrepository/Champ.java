@@ -1,4 +1,4 @@
-package lt.vcs.arenaspeedcolculator;
+package lt.vcs.arenaspeedcolculator.champsrepository;
 
 
 

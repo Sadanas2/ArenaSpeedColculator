@@ -1,4 +1,4 @@
-package lt.vcs.arenaspeedcolculator;
+package lt.vcs.arenaspeedcolculator.champsrepository;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -6,6 +6,9 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
 import java.util.List;
+
+import lt.vcs.arenaspeedcolculator.champsrepository.Champ;
+
 @Dao
 public interface ChampDao {
 
