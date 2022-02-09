@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/mainchampbutton"
+        android:id="@+id/mainChampButton"
         android:layout_width="208dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/secondbchampbutton"
+        android:id="@+id/secondChampButton"
         android:layout_width="208dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -141,7 +141,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/secondChamp"
-        app:layout_constraintTop_toBottomOf="@+id/mainchampbutton"
+        app:layout_constraintTop_toBottomOf="@+id/mainChampButton"
         app:layout_constraintVertical_bias="0.314" />
 
     <TextView
@@ -177,7 +177,7 @@
         app:layout_constraintVertical_bias="0.245" />
 
     <Button
-        android:id="@+id/fourthchampbutton"
+        android:id="@+id/fourthChampButton"
         android:layout_width="208dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -189,7 +189,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/fourthChamp"
-        app:layout_constraintTop_toBottomOf="@+id/thirdchampbutton"
+        app:layout_constraintTop_toBottomOf="@+id/thirdChampButton"
         app:layout_constraintVertical_bias="0.159" />
 
     <Button
@@ -224,7 +224,7 @@
         app:layout_constraintVertical_bias="0.295" />
 
     <Button
-        android:id="@+id/thirdchampbutton"
+        android:id="@+id/thirdChampButton"
         android:layout_width="208dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -236,7 +236,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/thirdChamp"
-        app:layout_constraintTop_toBottomOf="@+id/secondbchampbutton"
+        app:layout_constraintTop_toBottomOf="@+id/secondChampButton"
         app:layout_constraintVertical_bias="0.126" />
 
     <Button
@@ -252,7 +252,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.815"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fourthchampbutton"
+        app:layout_constraintTop_toBottomOf="@+id/fourthChampButton"
         app:layout_constraintVertical_bias="0.565"
         app:rippleColor="#FAF7F7" />
 
@@ -316,7 +316,7 @@
         app:layout_constraintVertical_bias="0.327" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/firstChampAllSpeed"
         android:layout_width="91dp"
         android:layout_height="58dp"
         android:layout_marginTop="8dp"
@@ -328,7 +328,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/mainchampbutton"
+        app:layout_constraintStart_toEndOf="@+id/mainChampButton"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.007" />
 
@@ -343,9 +343,9 @@
         android:text="888"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/firstChampAllSpeed"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/firstChampAllSpeed"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0" />
 

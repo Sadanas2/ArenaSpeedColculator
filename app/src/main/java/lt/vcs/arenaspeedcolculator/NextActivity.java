@@ -8,17 +8,14 @@ import android.widget.Button;
 import lt.vcs.arenaspeedcolculator.champsrepository.ChampionsWindow;
 
 public class NextActivity extends MainActivity {
-    protected Button mainchampbutton,secondbchampbutton,thirdchampbutton,fourthchampbutton;
+    protected Button mainChampButton, secondbChampButton, thirdChampButton, fourthChampButton,firstChampAllSpeed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        mainchampbutton = findViewById(R.id.mainchampbutton);
-        secondbchampbutton = findViewById(R.id.secondbchampbutton);
-        thirdchampbutton = findViewById(R.id.thirdchampbutton);
-        fourthchampbutton = findViewById(R.id.fourthchampbutton);
+        setUpUi();
 
         setUpMainChampButton();
         setUpSecondChampionButton();
@@ -36,11 +33,11 @@ public class NextActivity extends MainActivity {
         if (extras != null) {
             value = extras.getString("buttontxt");
         }
-        mainchampbutton.setText(value);
+        mainChampButton.setText(value);
     }
 
     private void setUpMainChampButton() {
-        mainchampbutton.setOnClickListener(new View.OnClickListener() {
+        mainChampButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
@@ -49,7 +46,7 @@ public class NextActivity extends MainActivity {
         });
     }
     private void setUpSecondChampionButton() {
-        secondbchampbutton.setOnClickListener(new View.OnClickListener() {
+        secondbChampButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
@@ -58,7 +55,7 @@ public class NextActivity extends MainActivity {
         });
     }
     private void setUpThirdChampionButton() {
-        thirdchampbutton.setOnClickListener(new View.OnClickListener() {
+        thirdChampButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
@@ -67,12 +64,20 @@ public class NextActivity extends MainActivity {
         });
     }
     private void setUpfourthChampionButton() {
-        fourthchampbutton.setOnClickListener(new View.OnClickListener() {
+        fourthChampButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
                 startActivity(intent);
             }
         });
+    }
+    private void setUpUi(){
+        mainChampButton = findViewById(R.id.mainChampButton);
+        secondbChampButton = findViewById(R.id.secondChampButton);
+        thirdChampButton = findViewById(R.id.thirdChampButton);
+        fourthChampButton = findViewById(R.id.fourthChampButton);
+        firstChampAllSpeed = findViewById(R.id.fourthChampButton);
+
     }
 }
