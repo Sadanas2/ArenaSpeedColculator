@@ -8,10 +8,7 @@ import android.widget.Button;
 import lt.vcs.arenaspeedcolculator.champsrepository.ChampionsWindow;
 
 public class NextActivity extends MainActivity {
-    private Button mainchampbutton;
-    private Button secondbchampbutton;
-    private Button thirdchampbutton;
-    private Button fourthchampbutton;
+    protected Button mainchampbutton,secondbchampbutton,thirdchampbutton,fourthchampbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +27,18 @@ public class NextActivity extends MainActivity {
 
 
     }
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        Bundle extras = getIntent().getExtras();
+        String value = "";
+        if (extras != null) {
+            value = extras.getString("buttontxt");
+        }
+        mainchampbutton.setText(value);
+    }
+
     private void setUpMainChampButton() {
         mainchampbutton.setOnClickListener(new View.OnClickListener() {
             @Override

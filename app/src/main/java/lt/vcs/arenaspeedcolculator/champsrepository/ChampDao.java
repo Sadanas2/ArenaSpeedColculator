@@ -15,12 +15,11 @@ public interface ChampDao {
     @Query("SELECT * FROM champss")
     List<Champ> getAll();
 
-    @Query("SELECT * FROM champss WHERE id IN (:userIds)")
-    List<Champ> loadAllByIds(int[] userIds);
-
-
     @Query("SELECT * FROM " + "champss" + " WHERE id =:id")
     Champ getItem(int id);
+
+    @Query("SELECT * FROM " + "champss" + " WHERE champ_name =:name")
+    Champ getChampName(String name);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertChamps(List<Champ> champslist);
@@ -28,7 +27,6 @@ public interface ChampDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertChamp(Champ champs);
 
-    @Query("DELETE FROM " + "champss" + " WHERE id =:id")
-    void deleteItem(int id);
+
 
 }

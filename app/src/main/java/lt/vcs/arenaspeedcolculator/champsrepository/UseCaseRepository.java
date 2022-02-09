@@ -24,9 +24,6 @@ public class UseCaseRepository {
         return champDao.getAll();
     }
 
-    public void deleteItem(int id) {
-        champDao.deleteItem(id);
-    }
 
     public void insertChamps() {
         champDao.insertChamps(makeChampList(17));
@@ -38,6 +35,9 @@ public class UseCaseRepository {
 
     public Champ getItem(int id) {
         return champDao.getItem(id);
+    }
+    public Champ getChampName(String name) {
+        return champDao.getChampName(name);
     }
 
     @NonNull

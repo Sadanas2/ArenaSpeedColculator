@@ -4,6 +4,7 @@ package lt.vcs.arenaspeedcolculator.champsrepository;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "champss")
@@ -25,7 +26,16 @@ public class  Champ {
     @ColumnInfo (name = "fills")
     private float fills;
 
+    @Ignore
     public Champ(int id, String name, int baseSpeed, int aura, float fills) {
+        this.id= id;
+        this.name = name;
+        this.baseSpeed = baseSpeed;
+        this.aura = aura;
+        this.fills = fills;
+    }
+
+    public Champ(String name) {
         this.id= id;
         this.name = name;
         this.baseSpeed = baseSpeed;
