@@ -22,7 +22,7 @@ public class NextActivity extends MainActivity {
         setUpThirdChampionButton();
         setUpfourthChampionButton();
         setUpSaveButton();
-
+        setUpFirstChampAllSpeed();
 
     }
     @Override
@@ -73,9 +73,11 @@ public class NextActivity extends MainActivity {
             }
         });
     }
+    private void setUpFirstChampAllSpeed(){
+
+    }
 
     private void setUpSaveButton(){
-
     }
 
     private void setUpUi(){
@@ -83,8 +85,8 @@ public class NextActivity extends MainActivity {
         secondbChampButton = findViewById(R.id.secondChampButton);
         thirdChampButton = findViewById(R.id.thirdChampButton);
         fourthChampButton = findViewById(R.id.fourthChampButton);
-        firstChampAllSpeed = findViewById(R.id.firstChampAllSpeed);
         saveButton = findViewById(R.id.saveButton);
+        firstChampAllSpeed = findViewById(R.id.firstChampAllSpeed);
         secondChampNeededSpeedButton = findViewById(R.id.secondChampNeededSpeedButton);
         thirdChampNeededSpeedButton = findViewById(R.id.thirdChampNeededSpeedButton);
         fourthChampNeededSpeedButton = findViewById(R.id.fourthChampNeededSpeedButton);
