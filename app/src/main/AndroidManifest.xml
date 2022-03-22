@@ -8,7 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ArenaSpeedColculator">
+        android:theme="@style/Theme.ArenaSpeedColculator"
+        android:screenOrientation="sensorPortrait">
+        <activity
+            android:name=".NextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedTeams"
+            android:exported="false" />
+        <activity
+            android:name=".champsrepository.ChampionsWindow"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
