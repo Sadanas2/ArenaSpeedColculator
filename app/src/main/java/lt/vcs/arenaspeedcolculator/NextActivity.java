@@ -30,11 +30,14 @@ public class NextActivity extends MainActivity {
         super.onStart();
 
         Bundle extras = getIntent().getExtras();
-        String value = "";
+        String value1 = "";
+        String value2 = "";;
         if (extras != null) {
-            value = extras.getString("buttontxt");
+            value1 = extras.getString("cb");
+            value2 = extras.getString("cb");
         }
-        mainChampButton.setText(value);
+        mainChampButton.setText(value1);
+        secondbChampButton.setText(value2);
     }
 
     private void setUpMainChampButton() {
@@ -42,6 +45,7 @@ public class NextActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
+                intent.putExtra("cb", 1);
                 startActivity(intent);
             }
         });
@@ -51,6 +55,7 @@ public class NextActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NextActivity.this, ChampionsWindow.class);
+                intent.putExtra("cb", 2);
                 startActivity(intent);
             }
         });

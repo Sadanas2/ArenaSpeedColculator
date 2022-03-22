@@ -18,7 +18,7 @@ public class ChampionsWindow extends NextActivity {
     private ArrayAdapter<Champ> arrayAdapter;
     private List<Champ> champslist;
     private UseCaseRepository useCaseRepository;
-    private Button mainchampbutton;
+    String zz;
 
 
     @Override
@@ -26,16 +26,30 @@ public class ChampionsWindow extends NextActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+
         useCaseRepository = new UseCaseRepository(getApplicationContext());
         champsListView= findViewById(R.id.champsListView);
 
-        mainchampbutton = new Button(getApplicationContext());
+
+
 
         useCaseRepository.insertChamps();
         champslist = useCaseRepository.getAll();
 
         setUpListView(champsListView);
         onClickItem(champsListView);
+
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        Bundle extras = getIntent().getExtras();
+        String value = "";;
+        if (extras!=null){
+            value = extras.getString("cb");
+        }
+        String zz= value;
 
     }
 
@@ -49,6 +63,8 @@ public class ChampionsWindow extends NextActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(ChampionsWindow.this, NextActivity.class);
                 intent.putExtra("buttontxt", champslist.get(position).getName());
+                intent.putExtra("cb", zz);
+
                 startActivity(intent);
             }
         });
