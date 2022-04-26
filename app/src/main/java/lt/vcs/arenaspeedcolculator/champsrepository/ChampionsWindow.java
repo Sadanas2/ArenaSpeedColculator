@@ -45,11 +45,11 @@ public class ChampionsWindow extends NextActivity {
         super.onStart();
 
         Bundle extras = getIntent().getExtras();
-        String value = "";;
+        int value=0;
         if (extras!=null){
-            value = extras.getString("cb");
+            value = extras.getInt("cb");
         }
-        String zz= value;
+        int zz= value;
 
     }
 
