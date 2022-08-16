@@ -1,4 +1,6 @@
 package lt.vcs.arenaspeedcolculator;
 
-public class SelectedChampions {
+public class SelectedChampions extends NextActivity {
+
+
 }

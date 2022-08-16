@@ -30,11 +30,11 @@ public class NextActivity extends MainActivity {
         super.onStart();
 
         Bundle extras = getIntent().getExtras();
-        String value1 = "";
-        String value2 = "";;
+        String value1 = "z";
+        String value2 = "c";;
         if (extras != null) {
-            value1 = extras.getString("cb");
-            value2 = extras.getString("cb");
+            value1 = extras.getString("zz");
+            value2 = extras.getString("zz");
         }
         mainChampButton.setText(value1);
         secondbChampButton.setText(value2);
